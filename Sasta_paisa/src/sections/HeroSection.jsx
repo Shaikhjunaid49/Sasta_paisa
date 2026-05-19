@@ -60,12 +60,6 @@ function HeroSection() {
               className="w-full max-w-[500px]"
             />
 
-            {/* PRICE BOX */}
-            <div className="absolute top-20 right-5 bg-lime-400 px-6 py-3 rounded-xl shadow-lg">
-              <h2 className="text-2xl font-bold">
-                ₹ 30,00,000
-              </h2>
-            </div>
           </div>
 
         </div>
