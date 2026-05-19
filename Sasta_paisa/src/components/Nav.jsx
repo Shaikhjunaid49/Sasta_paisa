@@ -1,5 +1,6 @@
 // Nav.jsx
 import React, { useState } from "react";
+import logo from "../assets/logo.jpeg";
 
 function Nav() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -26,11 +27,7 @@ function Nav() {
       <nav className="w-full border-b shadow-sm bg-white">
         <div className="max-w-[1400px] mx-auto flex items-center justify-between px-5 lg:px-10 py-4">
           {/* LOGO */}
-          <img
-            src="/src/assets/logo.jpeg"
-            alt="logo"
-            className="h-8 lg:h-12"
-          />
+          <img src={logo} alt="logo" className="h-8 lg:h-12" />
 
           {/* DESKTOP MENU */}
           <div className="hidden lg:flex items-center gap-8 font-medium">
