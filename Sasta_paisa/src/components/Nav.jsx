@@ -37,7 +37,8 @@ function Nav() {
             <a href="/">HOME</a>
 
             {/* LOANS DROPDOWN */}
-            <div className="relative group">
+            <div className="re
+            lative group">
               <button className="flex items-center gap-1">LOANS ▼</button>
 
               <div className="absolute hidden group-hover:block top-8 left-0 bg-white shadow-lg rounded-md w-60 py-3 z-50">
