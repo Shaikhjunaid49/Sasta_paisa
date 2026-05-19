@@ -7,15 +7,11 @@ function LoanCard({
 }) {
   return (
     <div
-      className={`bg-[#f4f9df] border border-[#e7f0c7] rounded-lg p-6 ${height} hover:shadow-lg transition duration-300`}
+      className={`w-full max-w-[300px] bg-[#EEFFD6] border border-[#e7f0c7] rounded-lg p-6 ${height} hover:shadow-lg transition duration-300`}
     >
       {/* ICON */}
       <div className="w-20 h-20 rounded-full bg-lime-400 flex items-center justify-center mx-auto">
-        <img
-          src={image}
-          alt={title}
-          className="w-10 h-10 object-contain"
-        />
+        <img src={image} alt={title} className="w-10 h-10 object-contain" />
       </div>
 
       {/* TITLE */}
