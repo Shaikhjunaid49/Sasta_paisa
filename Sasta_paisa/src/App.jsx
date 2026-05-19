@@ -1,13 +1,13 @@
 import React from "react";
 import Nav from "./components/Nav";
+import Card from "./components/LoanCard";
+import HeroSection from "./sections/HeroSection";
 
 function App() {
   return (
     <>
-      <Nav />
-      <h1 class="text-3xl font-bold underline text-blue-600">
-        Tailwind works!
-      </h1>
+      <nav />
+      <HeroSection />
     </>
   );
 }
