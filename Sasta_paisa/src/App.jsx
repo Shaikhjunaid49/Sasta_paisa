@@ -1,9 +1,9 @@
-import React from "react";
 import Nav from "./components/Nav";
 import HeroSection from "./sections/HeroSection";
 import FloatingText from "./components/FloatingText";
 import LoanServices from "./sections/LoanServices";
-
+import Footer from "./components/Footer";
+import AboutUs from "./components/AboutUs"
 function App() {
   return (
     <>
@@ -11,6 +11,8 @@ function App() {
       <HeroSection />
       <FloatingText />
       <LoanServices />
+      <AboutUs />
+      <Footer />
     </>
   );
 }
