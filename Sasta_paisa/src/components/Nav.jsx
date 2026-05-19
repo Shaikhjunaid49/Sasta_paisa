@@ -27,9 +27,9 @@ function Nav() {
         <div className="max-w-[1400px] mx-auto flex items-center justify-between px-5 lg:px-10 py-4">
           {/* LOGO */}
           <img
-            src="https://sastapaisa.com/assets/img/logo.png"
+            src="/src/assets/logo.jpeg"
             alt="logo"
-            className="h-10 lg:h-14"
+            className="h-8 lg:h-12"
           />
 
           {/* DESKTOP MENU */}
