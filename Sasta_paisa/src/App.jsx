@@ -2,7 +2,11 @@ import React from "react";
 import Nav from "./components/Nav";
 import Card from "./components/LoanCard";
 import HeroSection from "./sections/HeroSection";
-import RefrelConnector from "./components/RefrelConnnector";
+import FloatingText from "./components/FloatingText";
+import LoanServices from "./sections/LoanServices";
+import Footer from "./components/Footer";
+import ContactUs from "./components/ContactUs";
+import Referral from "./components/Referral";
 
 function App() {
   return (
@@ -10,7 +14,10 @@ function App() {
       <Nav />
       <HeroSection />
       <FloatingText />
-      <RefrelConnector />
+      <LoanServices />
+      <ContactUs />
+      <Referral />
+      <Footer />
     </>
   );
 }

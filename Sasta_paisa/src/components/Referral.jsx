@@ -1,7 +1,7 @@
 import React from "react";
 import { Phone, MessageCircle } from "lucide-react";
 
-const ReferralConnector = () => {
+const Referral = () => {
   return (
     <div className="bg-[#f3f3f3] min-h-screen py-8 px-4 md:px-10">
       {/* Main Heading */}
@@ -113,4 +113,4 @@ const ReferralConnector = () => {
   );
 };
 
-export default ReferralConnector;
+export default Referral;
