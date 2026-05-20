@@ -1,5 +1,11 @@
 import React, { useState } from "react";
-import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaLinkedinIn,
+  FaPhoneAlt,
+  FaRegClock,
+} from "react-icons/fa";
 import logo from "../assets/logo.png";
 
 function Nav() {
@@ -10,39 +16,51 @@ function Nav() {
   return (
     <>
       {/* TOP BAR */}
-      <div className="hidden lg:flex justify-between items-center bg-[#d8efb5] px-10 py-2 text-sm">
-        <p>⏰ Mon - Fri : 09.00 AM - 09.00 PM</p>
+      <div className="hidden lg:flex justify-between items-center bg-[#d8efb5] px-14 py-3 text-[16px]">
+        {/* LEFT SIDE */}
+        <div className="flex items-center gap-3 text-[#424242]">
+          <FaRegClock className="text-[#9ac43c] text-[18px]" />
 
-        <div className="flex items-center gap-5">
-          <p>📞 +91 72228 88255</p>
+          <p>Mon - Fri : 09.00 AM - 09.00 PM</p>
+        </div>
 
-          <div className="flex items-center gap-4">
-            {/* Facebook */}
+        {/* RIGHT SIDE */}
+        <div className="flex items-center gap-6">
+          {/* PHONE */}
+          <div className="flex items-center gap-3 text-[#424242]">
+            <FaPhoneAlt className="text-[#9ac43c] text-[15px]" />
+
+            <p>+91 72228 88255</p>
+          </div>
+
+          {/* SOCIAL ICONS */}
+          <div className="flex items-center gap-3">
+            {/* FACEBOOK */}
             <a
               href="https://facebook.com"
               target="_blank"
               rel="noreferrer"
-              className="w-8 h-8 rounded-full bg-white flex items-center justify-center hover:bg-blue-600 hover:text-white transition"
+              className="w-9 h-9 rounded-full bg-white flex items-center justify-center hover:bg-blue-600 hover:text-white transition"
             >
               <FaFacebookF size={14} />
             </a>
 
-            {/* LinkedIn */}
+            {/* LINKEDIN */}
             <a
               href="https://linkedin.com"
               target="_blank"
               rel="noreferrer"
-              className="w-8 h-8 rounded-full bg-white flex items-center justify-center hover:bg-blue-700 hover:text-white transition"
+              className="w-9 h-9 rounded-full bg-white flex items-center justify-center hover:bg-blue-700 hover:text-white transition"
             >
               <FaLinkedinIn size={14} />
             </a>
 
-            {/* Instagram */}
+            {/* INSTAGRAM */}
             <a
               href="https://instagram.com"
               target="_blank"
               rel="noreferrer"
-              className="w-8 h-8 rounded-full bg-white flex items-center justify-center hover:bg-pink-600 hover:text-white transition"
+              className="w-9 h-9 rounded-full bg-white flex items-center justify-center hover:bg-pink-600 hover:text-white transition"
             >
               <FaInstagram size={14} />
             </a>
@@ -61,17 +79,12 @@ function Nav() {
             className="w-[140px] lg:w-[180px] h-auto object-contain"
           />
 
-          <img src={logo} alt="logo" className="h-8 lg:h-12" />
-
           {/* DESKTOP MENU */}
           <div className="hidden lg:flex items-center gap-8 font-medium">
             <a href="/">HOME</a>
 
             {/* LOANS DROPDOWN */}
-            <div
-              className="re
-            lative group"
-            >
+            <div className="relative group">
               <button className="flex items-center gap-1">LOANS ▼</button>
 
               <div className="absolute hidden group-hover:block top-8 left-0 bg-white shadow-lg rounded-md w-60 py-3 z-50">
