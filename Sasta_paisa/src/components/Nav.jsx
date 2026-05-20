@@ -1,5 +1,6 @@
 import { useState } from "react";
 import logo from "../assets/logo.png";
+
 import {
   FaFacebookF,
   FaInstagram,
@@ -7,8 +8,6 @@ import {
   FaPhoneAlt,
   FaRegClock,
 } from "react-icons/fa";
-
-import { Link } from "react-router-dom";
 
 function Nav() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -60,14 +59,18 @@ function Nav() {
 
       {/* ================= NAVBAR ================= */}
       <nav className="w-full bg-white border-b border-gray-200">
-        <div className="flex items-center h-[95px]">
-          {/* LOGO */}
-          <div className="w-[430px] flex items-center pl-16">
-            <img src={logo} alt="Logo" className="w-[300px] object-contain" />
+        <div className="flex items-center h-[95px] px-6">
+          {/* ================= LOGO ================= */}
+          <div className="hidden lg:flex items-center justify-start w-[320px]">
+            <img
+              src={logo}
+              alt="Logo"
+              className="w-[240px] object-contain"
+            />
           </div>
 
-          {/* MENU */}
-          <div className="hidden lg:flex items-center gap-14 text-[16px] font-semibold text-black">
+          {/* ================= MENU ================= */}
+          <div className="hidden lg:flex flex-1 justify-center items-center gap-10 text-[16px] font-semibold text-black">
             {/* HOME */}
             <a href="/" className="hover:text-[#9ac43c] transition">
               HOME
@@ -77,7 +80,7 @@ function Nav() {
             <div className="relative group">
               <button className="flex items-center gap-2 hover:text-[#9ac43c] transition">
                 LOANS
-                <span className="text-[12px] mt-[2px]">▼</span>
+                <span className="text-[11px] mt-[2px]">▼</span>
               </button>
 
               {/* DROPDOWN */}
@@ -103,14 +106,14 @@ function Nav() {
             <div className="relative group">
               <button className="flex items-center gap-2 hover:text-[#9ac43c] transition">
                 ABOUT US
-                <span className="text-[12px] mt-[2px]">▼</span>
+                <span className="text-[11px] mt-[2px]">▼</span>
               </button>
             </div>
 
             {/* EMI */}
             <a
               href="/"
-              className="text-center leading-7 hover:text-[#9ac43c] transition"
+              className="text-center leading-6 hover:text-[#9ac43c] transition"
             >
               EMI <br />
               CALCULATOR
@@ -120,7 +123,7 @@ function Nav() {
             <div className="relative group">
               <button className="flex items-center gap-2 hover:text-[#9ac43c] transition">
                 FRANCHISE
-                <span className="text-[12px] mt-[2px]">▼</span>
+                <span className="text-[11px] mt-[2px]">▼</span>
               </button>
             </div>
 
@@ -132,33 +135,44 @@ function Nav() {
             {/* CONTACT */}
             <a
               href="/"
-              className="text-center leading-7 hover:text-[#9ac43c] transition"
+              className="text-center leading-6 hover:text-[#9ac43c] transition"
             >
               CONTACT <br />
               US
             </a>
           </div>
 
-          {/* APPLY BUTTON */}
-          <div className="ml-auto h-full">
-            <button className="hidden lg:flex items-center justify-center gap-4 bg-[#9ac43c] text-white w-[240px] h-full text-[22px] font-medium hover:bg-[#86ae2f] transition">
+          {/* ================= APPLY BUTTON ================= */}
+          <div className="hidden lg:flex h-full justify-end w-[260px]">
+            <button className="flex items-center justify-center gap-4 bg-[#9ac43c] text-white w-[220px] h-full text-[22px] font-medium hover:bg-[#86ae2f] transition">
               Apply
-              <span className="text-[32px]">→</span>
+              <span className="text-[30px]">→</span>
             </button>
           </div>
 
-          {/* MOBILE MENU BUTTON */}
-          <button
-            className="lg:hidden text-3xl ml-auto pr-5"
-            onClick={() => setMenuOpen(!menuOpen)}
-          >
-            {menuOpen ? "✕" : "☰"}
-          </button>
+          {/* ================= MOBILE HEADER ================= */}
+          <div className="flex lg:hidden items-center justify-between w-full">
+            {/* MOBILE LOGO */}
+            <img
+              src={logo}
+              alt="Logo"
+              className="w-[180px] object-contain"
+            />
+
+            {/* MOBILE MENU BUTTON */}
+            <button
+              className="text-3xl"
+              onClick={() => setMenuOpen(!menuOpen)}
+            >
+              {menuOpen ? "✕" : "☰"}
+            </button>
+          </div>
         </div>
 
-        {/* MOBILE MENU */}
+        {/* ================= MOBILE MENU ================= */}
         {menuOpen && (
           <div className="lg:hidden bg-[#f5f5f5] px-6 py-5 space-y-5 text-lg font-medium">
+            {/* HOME */}
             <a href="/" className="block">
               HOME
             </a>
@@ -183,22 +197,27 @@ function Nav() {
               )}
             </div>
 
+            {/* ABOUT */}
             <a href="/" className="block">
               ABOUT US
             </a>
 
+            {/* EMI */}
             <a href="/" className="block">
               EMI CALCULATOR
             </a>
 
+            {/* FRANCHISE */}
             <a href="/" className="block">
               FRANCHISE
             </a>
 
+            {/* BLOG */}
             <a href="/" className="block">
               BLOG
             </a>
 
+            {/* CONTACT */}
             <a href="/" className="block">
               CONTACT US
             </a>
