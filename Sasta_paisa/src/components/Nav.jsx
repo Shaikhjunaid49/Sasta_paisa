@@ -1,10 +1,12 @@
 // Nav.jsx
 import React, { useState } from "react";
 import logo from "../assets/logo.jpeg";
+import { Link } from "react-router-dom";
 
 function Nav() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [loanOpen, setLoanOpen] = useState(false);
+  const [franchiseOpen, setFranchiseOpen] = useState(false);
 
   return (
     <>
@@ -34,8 +36,10 @@ function Nav() {
             <a href="/">HOME</a>
 
             {/* LOANS DROPDOWN */}
-            <div className="re
-            lative group">
+            <div
+              className="re
+            lative group"
+            >
               <button className="flex items-center gap-1">LOANS ▼</button>
 
               <div className="absolute hidden group-hover:block top-8 left-0 bg-white shadow-lg rounded-md w-60 py-3 z-50">
