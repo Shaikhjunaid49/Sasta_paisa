@@ -10,7 +10,7 @@ import {
 
 export default function Footer() {
   return (
-    <footer className="bg-black text-white pt-12 pb-6 px-5 sm:px-8 md:px-16">
+    <footer className="bg-black text-white pt-10 pb-6 px-4 sm:px-8 md:px-16">
       {/* Top Footer */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 border-b border-gray-700 pb-10">
         
@@ -24,7 +24,7 @@ export default function Footer() {
             
             <div className="flex items-start gap-3">
               <FaMapMarkerAlt className="mt-1 text-lg shrink-0" />
-              <p className="leading-6">
+              <p className="leading-6 text-sm md:text-base">
                 Kamala Arcade, Office No 307, 3rd Floor,
                 Jangali Maharaj Rd, Shivajinagar,
                 Pune, Maharashtra 411004
@@ -36,7 +36,7 @@ export default function Footer() {
               <p>+91 72228 88255</p>
             </div>
 
-            <div className="flex items-center gap-3 break-all">
+            <div className="flex items-center gap-3 break-words">
               <FaEnvelope className="shrink-0" />
               <p>manoj.a@sastapaisa.com</p>
             </div>
@@ -47,9 +47,9 @@ export default function Footer() {
             {[FaFacebookF, FaYoutube, FaLinkedinIn].map(
               (Icon, index) => (
                 <div
-                  key={index}
-                  className="w-10 h-10 md:w-12  md:h-12 rounded-full border border-white flex items-center justify-center hover:bg-[#EEFFD6]  hover:text-black transition duration-300 cursor-pointer"
-                >
+                key={index}
+                className="w-10 h-10 sm:w-11 sm:h-11 md:w-12 md:h-12 rounded-full border border-white flex items-center justify-center hover:bg-[#EEFFD6] hover:text-green-500 transition duration-300 cursor-pointer"
+              >
                   <Icon />
                 </div>
               )
@@ -63,7 +63,7 @@ export default function Footer() {
             Loans
           </h2>
 
-          <ul className="space-y-3 text-gray-300 text-sm md:text-base">
+          <ul className="space-y-3 text-gray-300 text-sm  md:text-base">
             {[
               "Personal Loan",
               "Business Loan",
@@ -75,9 +75,9 @@ export default function Footer() {
             ].map((item, index) => (
               <li
                 key={index}
-                className="flex items-center gap-2 hover:text-white transition cursor-pointer"
+                className="flex items-center gap-2 cursor-pointer transition-all duration-300 hover:text-green-500 group"
               >
-                <FaChevronRight className="text-xs" />
+                <FaChevronRight className="text-xs transition-all duration-300 group-hover:text-green-500" />
                 {item}
               </li>
             ))}
@@ -90,7 +90,7 @@ export default function Footer() {
             Quick Links
           </h2>
 
-          <ul className="space-y-3 text-gray-300 text-sm md:text-base">
+          <ul className="space-y-3 text-gray-300 text-sm  md:text-base">
             {[
               "About Us",
               "Contact Us",
@@ -100,27 +100,32 @@ export default function Footer() {
               "Terms & Conditions",
             ].map((item, index) => (
               <li
-                key={index}
-                className="flex items-center gap-2 hover:text-white transition cursor-pointer"
-              >
-                <FaChevronRight className="text-xs" />
-                {item}
-              </li>
+  key={index}
+  className="flex items-center gap-2 cursor-pointer transition duration-300 hover:text-green-500 group"
+>
+  <FaChevronRight className="text-xs group-hover:text-green-500" />
+  {item}
+</li>
             ))}
           </ul>
         </div>
       </div>
 
       {/* Bottom Footer */}
-      <div className="text-center pt-6 text-gray-400 text-xs sm:text-sm">
-        <p>© 2026 Sasta Paisa, All Rights Reserved.</p>
+      <div className="text-center pt-6 text-gray-400 text-xs sm:text-sm space-y-2">
+        <p className="text-white text-sm"> © 2026 {" "}
+        <span className="underline decoration-white hover:text-green-500 cursor-pointer transition duration-300">
+          Sasta Paisa
+  </span> 
+  , All Rights Reserved.
+  </p>
 
-        <p className="mt-2">
-          Designed & Developed by{" "}
-          <span className="text-white underline cursor-pointer">
-            BrandsBees
-          </span>
-        </p>
+        <p className="text-white text-sm">
+  Designed & Developed by{" "}
+  <span className="underline decoration-white hover:text-green-500 cursor-pointer transition duration-300">
+    BrandsBees
+  </span>
+</p>
       </div>
     </footer>
   );

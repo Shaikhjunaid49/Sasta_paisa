@@ -1,16 +1,11 @@
-import React, { useState } from "react";
-<<<<<<< HEAD
+import { useState } from "react";
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
-=======
-import logo from "../assets/logo.png";
->>>>>>> 244e413be7792fb9aa9ef8abaaeeb79a600adf9a
 import logo from "../assets/logo.jpeg";
-import { Link } from "react-router-dom";
 
 function Nav() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [loanOpen, setLoanOpen] = useState(false);
-  const [franchiseOpen, setFranchiseOpen] = useState(false);
+  // const [franchiseOpen, setFranchiseOpen] = useState(false);
 
   return (
     <>
