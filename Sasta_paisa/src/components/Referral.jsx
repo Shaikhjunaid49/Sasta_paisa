@@ -145,7 +145,6 @@ const Referral = () => {
         </section>
 
         {/* BENEFITS SECTION */}
-        {/* BENEFITS SECTION */}
         <section className="bg-[#f5f5f5] py-16 px-6 md:px-20">
           <h2 className="text-[#0b2b63] text-3xl md:text-[48px] font-bold mb-10 leading-tight">
             Benefits of the Referral Connector Program
