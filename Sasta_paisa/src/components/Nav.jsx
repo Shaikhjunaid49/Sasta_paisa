@@ -1,5 +1,5 @@
-// Nav.jsx
 import React, { useState } from "react";
+import logo from "../assets/logo.png";
 
 function Nav() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -27,9 +27,9 @@ function Nav() {
         <div className="max-w-[1400px] mx-auto flex items-center justify-between px-5 lg:px-10 py-4">
           {/* LOGO */}
           <img
-            src="/src/assets/logo.jpeg"
-            alt="logo"
-            className="h-8 lg:h-12"
+            src={logo}
+            alt="Main Logo"
+            className="w-[140px] lg:w-[180px] h-auto object-contain"
           />
 
           {/* DESKTOP MENU */}
@@ -37,8 +37,10 @@ function Nav() {
             <a href="/">HOME</a>
 
             {/* LOANS DROPDOWN */}
-            <div className="re
-            lative group">
+            <div
+              className="re
+            lative group"
+            >
               <button className="flex items-center gap-1">LOANS ▼</button>
 
               <div className="absolute hidden group-hover:block top-8 left-0 bg-white shadow-lg rounded-md w-60 py-3 z-50">

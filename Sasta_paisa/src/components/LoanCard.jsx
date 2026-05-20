@@ -7,15 +7,20 @@ function LoanCard({
 }) {
   return (
     <div
-      className={`w-full max-w-[300px] bg-[#EEFFD6] border border-[#e7f0c7] rounded-lg p-6 ${height} hover:shadow-lg transition duration-300`}
+      className={`w-full max-w-[300px] bg-[#EEFFD6] border border-[#dbe9bf] rounded-md p-6 ${height} hover:shadow-md transition duration-300`}
     >
+      
       {/* ICON */}
-      <div className="w-20 h-20 rounded-full bg-lime-400 flex items-center justify-center mx-auto">
-        <img src={image} alt={title} className="w-10 h-10 object-contain" />
+      <div className="flex items-center justify-center">
+        <img
+          src={image}
+          alt={title}
+          className="w-[110px] object-contain"
+        />
       </div>
 
       {/* TITLE */}
-      <h2 className="text-2xl font-semibold text-center text-[#1e2b4f] mt-5">
+      <h2 className="text-[20px] font-bold text-center text-[#122b63] mt-5">
         {title}
       </h2>
 
@@ -28,12 +33,14 @@ function LoanCard({
 
       {/* BUTTON */}
       {showButton && (
-        <button className="w-10 h-10 rounded-full bg-white mt-6 flex items-center justify-center text-lime-500 text-2xl shadow-md hover:scale-110 transition">
-          +
-        </button>
+        <div className="flex justify-center">
+          <button className="w-10 h-10 rounded-full bg-white mt-6 flex items-center justify-center text-[#95b92f] text-2xl shadow-sm hover:scale-105 transition">
+            +
+          </button>
+        </div>
       )}
     </div>
   );
 }
- 
+
 export default LoanCard;
