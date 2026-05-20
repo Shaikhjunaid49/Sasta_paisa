@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import logo from "../assets/logo.png";
-import logo from "../assets/logo.jpeg";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 function Nav() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -35,9 +34,6 @@ function Nav() {
             alt="Main Logo"
             className="w-[140px] lg:w-[180px] h-auto object-contain"
           />
-
-          <img src={logo} alt="logo" className="h-8 lg:h-12" />
-
 
           {/* DESKTOP MENU */}
           <div className="hidden lg:flex items-center gap-8 font-medium">

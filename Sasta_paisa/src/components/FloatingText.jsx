@@ -13,7 +13,7 @@ function FloatingText() {
   return (
     <section className="w-full bg-[#96b937] overflow-hidden py-4">
       
-      {/* MARQUEE */}
+      {/* Marquee Feature */}
       <div className="flex whitespace-nowrap animate-marquee">
         
         {[...items, ...items].map((item, index) => (
@@ -23,7 +23,6 @@ function FloatingText() {
           >
             <span>{item}</span>
 
-            {/* DOT */}
             <div className="w-2 h-2 bg-white rounded-full ml-8"></div>
           </div>
         ))}

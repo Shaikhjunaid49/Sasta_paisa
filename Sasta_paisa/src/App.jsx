@@ -9,6 +9,9 @@ import ContactUs from "./components/ContactUs";
 
 import WhyChooseUs from "./components/WhyChooseUs";
 import Referral from "./components/Referral";
+import Feedback from "./components/Feedback";
+import Partners from "./sections/Partners";
+
 
 function App() {
   return (
@@ -20,6 +23,8 @@ function App() {
       <ContactUs />
       <WhyChooseUs />
       <Referral />
+      <Feedback />
+      <Partners />
       <Footer />
     </>
   );
