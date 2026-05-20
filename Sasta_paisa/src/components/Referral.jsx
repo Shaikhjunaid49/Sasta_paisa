@@ -1,4 +1,3 @@
-import React from "react";
 import { Phone, MessageCircle } from "lucide-react";
 import referImage from "../assets/Refer.webp";
 
@@ -144,7 +143,6 @@ const Referral = () => {
           </p>
         </section>
 
-        {/* BENEFITS SECTION */}
         {/* BENEFITS SECTION */}
         <section className="bg-[#f5f5f5] py-16 px-6 md:px-20">
           <h2 className="text-[#0b2b63] text-3xl md:text-[48px] font-bold mb-10 leading-tight">

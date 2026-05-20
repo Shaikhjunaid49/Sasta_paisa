@@ -13,7 +13,7 @@ export default function Footer() {
     <footer className="bg-black text-white pt-10 pb-6 px-4 sm:px-8 md:px-16">
       {/* Top Footer */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 border-b border-gray-700 pb-10">
-        
+
         {/* Address Section */}
         <div>
           <h2 className="text-2xl md:text-3xl font-bold mb-5">
@@ -21,7 +21,7 @@ export default function Footer() {
           </h2>
 
           <div className="space-y-4 text-gray-300 text-sm md:text-base">
-            
+
             <div className="flex items-start gap-3">
               <FaMapMarkerAlt className="mt-1 text-lg shrink-0" />
               <p className="leading-6 text-sm md:text-base">
@@ -47,9 +47,9 @@ export default function Footer() {
             {[FaFacebookF, FaYoutube, FaLinkedinIn].map(
               (Icon, index) => (
                 <div
-                key={index}
-                className="w-10 h-10 sm:w-11 sm:h-11 md:w-12 md:h-12 rounded-full border border-white flex items-center justify-center hover:bg-[#EEFFD6] hover:text-green-500 transition duration-300 cursor-pointer"
-              >
+                  key={index}
+                  className="w-10 h-10 sm:w-11 sm:h-11 md:w-12 md:h-12 rounded-full border border-white flex items-center justify-center hover:bg-[#EEFFD6] hover:text-green-500 transition duration-300 cursor-pointer"
+                >
                   <Icon />
                 </div>
               )
@@ -63,7 +63,7 @@ export default function Footer() {
             Loans
           </h2>
 
-          <ul className="space-y-3 text-gray-300 text-sm  md:text-base">
+          <ul className="space-y-3 text-gray-300 text-sm md:text-base">
             {[
               "Personal Loan",
               "Business Loan",
@@ -75,10 +75,13 @@ export default function Footer() {
             ].map((item, index) => (
               <li
                 key={index}
-                className="flex items-center gap-2 cursor-pointer transition-all duration-300 hover:text-green-500 group"
+                className="flex items-center gap-2 cursor-pointer group transition-all duration-300 hover:text-green-500 hover:translate-x-2"
               >
-                <FaChevronRight className="text-xs transition-all duration-300 group-hover:text-green-500" />
-                {item}
+                <FaChevronRight className="text-xs transition-all duration-300 group-hover:text-green-500 group-hover:translate-x-1" />
+
+                <span className="transition-all duration-300">
+                  {item}
+                </span>
               </li>
             ))}
           </ul>
@@ -90,7 +93,7 @@ export default function Footer() {
             Quick Links
           </h2>
 
-          <ul className="space-y-3 text-gray-300 text-sm  md:text-base">
+          <ul className="space-y-3 text-gray-300 text-sm md:text-base">
             {[
               "About Us",
               "Contact Us",
@@ -100,12 +103,15 @@ export default function Footer() {
               "Terms & Conditions",
             ].map((item, index) => (
               <li
-  key={index}
-  className="flex items-center gap-2 cursor-pointer transition duration-300 hover:text-green-500 group"
->
-  <FaChevronRight className="text-xs group-hover:text-green-500" />
-  {item}
-</li>
+                key={index}
+                className="flex items-center gap-2 cursor-pointer group transition-all duration-300 hover:text-green-500 hover:translate-x-2"
+              >
+                <FaChevronRight className="text-xs transition-all duration-300 group-hover:text-green-500 group-hover:translate-x-1" />
+
+                <span className="transition-all duration-300">
+                  {item}
+                </span>
+              </li>
             ))}
           </ul>
         </div>
@@ -114,18 +120,18 @@ export default function Footer() {
       {/* Bottom Footer */}
       <div className="text-center pt-6 text-gray-400 text-xs sm:text-sm space-y-2">
         <p className="text-white text-sm"> © 2026 {" "}
-        <span className="underline decoration-white hover:text-green-500 cursor-pointer transition duration-300">
-          Sasta Paisa
-  </span> 
-  , All Rights Reserved.
-  </p>
+          <span className="underline decoration-white hover:text-green-500 cursor-pointer transition duration-300">
+            Sasta Paisa
+          </span>
+          , All Rights Reserved.
+        </p>
 
         <p className="text-white text-sm">
-  Designed & Developed by{" "}
-  <span className="underline decoration-white hover:text-green-500 cursor-pointer transition duration-300">
-    BrandsBees
-  </span>
-</p>
+          Designed & Developed by{" "}
+          <span className="underline decoration-white hover:text-green-500 cursor-pointer transition duration-300">
+            BrandsBees
+          </span>
+        </p>
       </div>
     </footer>
   );
