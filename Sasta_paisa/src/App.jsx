@@ -3,6 +3,7 @@ import HeroSection from "./sections/HeroSection";
 import FloatingText from "./components/FloatingText";
 import LoanServices from "./sections/LoanServices";
 import Footer from "./components/Footer";
+import ContactUs from "./components/ContactUs";
 function App() {
   return (
     <>
@@ -10,6 +11,7 @@ function App() {
       <HeroSection />
       <FloatingText />
       <LoanServices />
+      <ContactUs/>
       <Footer />
     </>
   );
