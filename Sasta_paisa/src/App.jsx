@@ -15,6 +15,7 @@ import EmiCalculator from "./components/EmiCalculator";
 
 function App() {
   return (
+
     <>
       <Nav />
       <HeroSection />
@@ -22,6 +23,10 @@ function App() {
       <LoanServices />
       <ContactUs/>
       <EmiCalculator/>
+      <WhyChooseUs />
+      <Referral />
+      <Feedback />
+      <Partners />
       <Footer />
     </>
   );
