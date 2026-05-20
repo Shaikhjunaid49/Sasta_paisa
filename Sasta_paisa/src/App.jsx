@@ -6,6 +6,8 @@ import FloatingText from "./components/FloatingText";
 import LoanServices from "./sections/LoanServices";
 import Footer from "./components/Footer";
 import ContactUs from "./components/ContactUs";
+
+import WhyChooseUs from "./components/WhyChooseUs";
 import Referral from "./components/Referral";
 
 function App() {
@@ -16,6 +18,7 @@ function App() {
       <FloatingText />
       <LoanServices />
       <ContactUs />
+      <WhyChooseUs />
       <Referral />
       <Footer />
     </>

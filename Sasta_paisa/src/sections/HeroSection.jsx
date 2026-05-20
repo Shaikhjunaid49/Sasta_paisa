@@ -1,9 +1,9 @@
-import personalLoan from "../assets/icons/icon1.jpeg";
-import businessLoan from "../assets/icons/icon2.jpeg";
-import homeLoan from "../assets/icons/icon3.jpeg";
-import mortgageLoan from "../assets/icons/icon4.jpeg";
-import usedCar from "../assets/icons/icon5.jpeg";
-import creditCard from "../assets/icons/icon6.jpeg";
+import personalLoan from "../assets/icons/icon1.png";
+import businessLoan from "../assets/icons/icon2.png";
+import homeLoan from "../assets/icons/icon3.png";
+import mortgageLoan from "../assets/icons/icon4.png";
+import usedCar from "../assets/icons/icon5.png";
+import creditCard from "../assets/icons/icon6.png";
 import LoanCard from "../components/LoanCard";
 
 import heroMan from "../assets/Hero_man.jpeg";
