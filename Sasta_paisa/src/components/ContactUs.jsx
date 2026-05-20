@@ -65,7 +65,7 @@ const ContactUs = () => {
             Contact Us
           </button>
 
-          <h2 className="text-5xl font-bold text-[#0d2b5c] leading-tight mb-8">
+          <h2 className="text-5xl font-bold text-[#1B2C51] leading-tight mb-8">
             Have Any Query? Please Contact Us!
           </h2>
 

@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import { useState } from "react";
+import logo from "../assets/logo.png";
 import {
   FaFacebookF,
   FaInstagram,
@@ -6,7 +7,6 @@ import {
   FaPhoneAlt,
   FaRegClock,
 } from "react-icons/fa";
-import logo from "../assets/logo.png";
 
 function Nav() {
   const [menuOpen, setMenuOpen] = useState(false);

@@ -1,4 +1,3 @@
-import React from "react";
 import { Phone, MessageCircle } from "lucide-react";
 import referImage from "../assets/Refer.webp";
 
