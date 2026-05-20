@@ -3,6 +3,8 @@ import HeroSection from "./sections/HeroSection";
 import FloatingText from "./components/FloatingText";
 import LoanServices from "./sections/LoanServices";
 import Footer from "./components/Footer";
+
+
 function App() {
   return (
     <>
@@ -15,4 +17,4 @@ function App() {
   );
 }
 
-export default App;
+export default App;   

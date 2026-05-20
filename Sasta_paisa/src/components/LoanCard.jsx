@@ -35,5 +35,5 @@ function LoanCard({
     </div>
   );
 }
-
+ 
 export default LoanCard;
