@@ -1,5 +1,6 @@
 // Nav.jsx
 import React, { useState } from "react";
+import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import logo from "../assets/logo.jpeg";
 import { Link } from "react-router-dom";
 
@@ -17,10 +18,36 @@ function Nav() {
         <div className="flex items-center gap-5">
           <p>📞 +91 72228 88255</p>
 
-          <div className="flex gap-3 text-lg">
-            <span>FB</span>
-            <span>IN</span>
-            <span>IG</span>
+          <div className="flex items-center gap-4">
+            {/* Facebook */}
+            <a
+              href="https://facebook.com"
+              target="_blank"
+              rel="noreferrer"
+              className="w-8 h-8 rounded-full bg-white flex items-center justify-center hover:bg-blue-600 hover:text-white transition"
+            >
+              <FaFacebookF size={14} />
+            </a>
+
+            {/* LinkedIn */}
+            <a
+              href="https://linkedin.com"
+              target="_blank"
+              rel="noreferrer"
+              className="w-8 h-8 rounded-full bg-white flex items-center justify-center hover:bg-blue-700 hover:text-white transition"
+            >
+              <FaLinkedinIn size={14} />
+            </a>
+
+            {/* Instagram */}
+            <a
+              href="https://instagram.com"
+              target="_blank"
+              rel="noreferrer"
+              className="w-8 h-8 rounded-full bg-white flex items-center justify-center hover:bg-pink-600 hover:text-white transition"
+            >
+              <FaInstagram size={14} />
+            </a>
           </div>
         </div>
       </div>
