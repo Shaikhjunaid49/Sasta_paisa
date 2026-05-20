@@ -102,6 +102,7 @@ const Referral = () => {
           <MessageCircle className="text-[#27d366] w-8 h-8" />
         </button>
       </div>
+
       {/* INFO SECTIONS */}
       <div className="max-w-[1600px] mx-auto px-3 pb-12 pt-0">
         {/* WHO CAN BE A REFERRAL CONNECTOR */}
