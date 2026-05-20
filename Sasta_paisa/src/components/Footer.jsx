@@ -48,7 +48,7 @@ export default function Footer() {
               (Icon, index) => (
                 <div
                   key={index}
-                  className="w-10 h-10 md:w-12 md:h-12 rounded-full border border-white flex items-center justify-center hover:bg-white hover:text-black transition duration-300 cursor-pointer"
+                  className="w-10 h-10 md:w-12  md:h-12 rounded-full border border-white flex items-center justify-center hover:bg-[#EEFFD6]  hover:text-black transition duration-300 cursor-pointer"
                 >
                   <Icon />
                 </div>
