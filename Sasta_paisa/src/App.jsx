@@ -11,6 +11,7 @@ import Feedback from "./components/Feedback";
 import Partners from "./sections/Partners";
 
 import EmiCalculator from "./components/EmiCalculator";
+import Referral from "./components/Referral";
 
 
 function App() {
@@ -23,10 +24,14 @@ function App() {
       <LoanServices />
       <ContactUs/>
       <EmiCalculator/>
+<<<<<<< HEAD
       <WhyChooseUs />
       <Referral />
       <Feedback />
       <Partners />
+=======
+      <Referral/>
+>>>>>>> 6338a302d9604cbccb0c48a09316850f0e19e128
       <Footer />
     </>
   );
