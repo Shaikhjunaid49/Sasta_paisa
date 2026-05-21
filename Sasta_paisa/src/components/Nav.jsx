@@ -59,14 +59,10 @@ function Nav() {
 
       {/* ================= NAVBAR ================= */}
       <nav className="w-full bg-white border-b border-gray-200">
-        <div className="flex items-center h-[95px] px-6">
+        <div className="flex items-center h-[95px] ">
           {/* ================= LOGO ================= */}
           <div className="hidden lg:flex items-center justify-start w-[320px]">
-            <img
-              src={logo}
-              alt="Logo"
-              className="w-[240px] object-contain"
-            />
+            <img src={logo} alt="Logo" className="w-[240px] object-contain" />
           </div>
 
           {/* ================= MENU ================= */}
@@ -153,17 +149,10 @@ function Nav() {
           {/* ================= MOBILE HEADER ================= */}
           <div className="flex lg:hidden items-center justify-between w-full">
             {/* MOBILE LOGO */}
-            <img
-              src={logo}
-              alt="Logo"
-              className="w-[180px] object-contain"
-            />
+            <img src={logo} alt="Logo" className="w-[180px] object-contain" />
 
             {/* MOBILE MENU BUTTON */}
-            <button
-              className="text-3xl"
-              onClick={() => setMenuOpen(!menuOpen)}
-            >
+            <button className="text-3xl" onClick={() => setMenuOpen(!menuOpen)}>
               {menuOpen ? "✕" : "☰"}
             </button>
           </div>
